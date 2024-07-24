@@ -272,6 +272,9 @@ jobs:
 
           # Submodule xxxxx patches:
 
+          # Loop/LoopCore/LoopCoreConstants.swift : Changed medium absorption time from 3 hours to 2 hours
+          curl https://github.com/tycho40/Loop/commit/5187ce20723fe7fd940ad6b07332e76d14979209.patch | git apply --directory=Loop -v --whitespace=fix
+
           # Add patches for customization of additional submodules by following the templates above, 
           # and make sure to specify the submodule by setting "--directory=(submodule_name)".
           # Several patches may be added per submodule.
